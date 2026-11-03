@@ -413,6 +413,18 @@ body.home .topbar-wrap {
 	text-underline-offset: .18em;
 }
 
+.tp-direct-answer {
+	background: #f2f5fb;
+	border-left: 4px solid var(--tnw-blue-dark);
+	color: #242424;
+	margin: 0 0 28px;
+	padding: 18px 22px;
+}
+
+.tp-direct-answer p:last-child {
+	margin-bottom: 0;
+}
+
 @media (max-width: 800px) {
 	.tnw-shell {
 		padding: 0 20px;
