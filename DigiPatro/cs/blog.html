@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Stories | Chiya Station Biratnagar</title>
+  <meta name="description" content="Discover stories, live music events, tea culture insights, and community highlights from Chiya Station on Airport Line, Biratnagar.">
+  <link rel="canonical" href="https://chiyastation.com.np/blog/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E5A00D'%3E%3Cpath d='M18 8h1a4 4 0 0 1 0 8h-1' stroke='%23C07A00' stroke-width='2' fill='none'/%3E%3Cpath d='M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z' fill='%23F5B800' stroke='%23C07A00' stroke-width='1.5'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: {
+              DEFAULT: '#F5B800',
+              hover: '#E5A800',
+              light: '#FEF9E6',
+              deep: '#D49B00',
+              banner: '#F2B705'
+            },
+            teaGold: '#C97A10',
+            warmCream: '#FAF6ED',
+            warmPaper: '#FFFDF9',
+            terracotta: '#B8532B',
+            charcoal: {
+              DEFAULT: '#1F1C18',
+              muted: '#686259',
+              light: '#8C857B',
+              border: '#EFE7D8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-warmCream text-charcoal font-sans antialiased selection:bg-brandYellow-light selection:text-brandYellow-deep">
+
+  <!-- Header -->
+  <header class="w-full pt-4 pb-3 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between border-b border-charcoal-border/60">
+    <a href="index.html" class="flex items-center gap-2.5 group">
+      <div class="w-12 h-12 rounded-full bg-brandYellow border-2 border-white shadow-md flex items-center justify-center text-charcoal font-black text-xl">
+        <span class="font-serif italic font-bold">CS</span>
+      </div>
+      <div>
+        <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-charcoal block leading-none">Chiya Station</span>
+        <span class="text-[10px] font-bold tracking-widest uppercase text-teaGold block mt-0.5">Biratnagar • Est. 2019</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 text-xs font-semibold tracking-wide text-charcoal/80">
+      <a href="index.html" class="hover:text-charcoal transition-colors">Home</a>
+      <a href="index.html#categoriesContainer" class="hover:text-charcoal transition-colors">Our Teas</a>
+      <a href="index.html#mood-matcher" class="hover:text-charcoal transition-colors">AI Tea Experience</a>
+      <a href="founders-note.html" class="hover:text-charcoal transition-colors">Founder's Note</a>
+      <a href="blog.html" class="text-charcoal font-bold flex flex-col items-center">
+        <span>Blog</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brandYellow mt-1"></span>
+      </a>
+      <a href="index.html#location" class="hover:text-charcoal transition-colors">Airport Line Hub</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="index.html#mood-matcher" class="px-5 py-2.5 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-all shadow-sm">
+        <span>Find Your Chiya ✨</span>
+      </a>
+      <a href="index.html" class="md:hidden text-xs font-bold text-charcoal bg-white px-3 py-1.5 rounded-full border border-charcoal-border">← Home</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12 sm:py-16">
+    
+    <!-- Blog Header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandYellow-light border border-brandYellow text-charcoal text-xs font-bold tracking-wide uppercase mb-3">
+        Stories & Gatherings
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-charcoal leading-tight">
+        The Chiya Station Journal
+      </h1>
+      <p class="text-charcoal-muted text-sm sm:text-base mt-3">
+        Chronicles of tea culture, acoustic live jams, entrepreneurial thoughts, and the vibrant youth of Biratnagar.
+      </p>
+    </div>
+
+    <!-- Featured Post -->
+    <div class="mb-14 bg-white rounded-3xl p-6 sm:p-8 border border-charcoal-border shadow-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7 rounded-2xl overflow-hidden aspect-[16/9] bg-warmCream">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80" alt="Live Music Event at Chiya Station" class="w-full h-full object-cover">
+      </div>
+      <div class="lg:col-span-5 space-y-4">
+        <div class="flex items-center gap-2 text-[11px] font-bold text-teaGold uppercase tracking-wider">
+          <span>Events & Culture</span>
+          <span>•</span>
+          <span class="text-charcoal-muted font-medium">May 2026</span>
+        </div>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal leading-snug">
+          Live Music Event: Jamming with Pragyan & Team at Chiya Station
+        </h2>
+        <p class="text-xs sm:text-sm text-charcoal-muted leading-relaxed">
+          Acoustic strings, steamy Matka Chiya, and an unforgettable evening of soul tunes on Airport Line. How music transforms our café into a community sanctuary.
+        </p>
+        <div class="pt-2 flex items-center justify-between">
+          <div class="text-xs text-charcoal-muted">By Chiya Station Team</div>
+          <span class="text-xs font-bold text-brandYellow-deep hover:underline">Read Story →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Posts Grid (4 Real Articles from the Site) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Article 1: Must Visit Place -->
+      <article class="bg-white rounded-2xl p-5 border border-charcoal-border shadow-card flex flex-col justify-between hover:shadow-card-hover transition-all">
+        <div>
+          <div class="w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 bg-warmCream">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Why Chiya Station is a Must Visit Place" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[10px] font-extrabold text-teaGold uppercase tracking-wider">Biratnagar Guide</span>
+          <h3 class="font-bold text-lg text-charcoal mt-1 leading-snug">
+            Why Chiya Station is a Must-Visit Place in Biratnagar
+          </h3>
+          <p class="text-xs text-charcoal-muted mt-2 leading-relaxed">
+            From travelers arriving at Biratnagar Domestic Airport to students solving board game puzzles, here is why Chiya Station is recognized as the city’s premier "Third Space".
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-[11px] text-charcoal-muted">
+          <span>5 min read</span>
+          <span class="font-bold text-charcoal">Read Article →</span>
+        </div>
+      </article>
+
+      <!-- Article 2: Modern Tea Culture -->
+      <article class="bg-white rounded-2xl p-5 border border-charcoal-border shadow-card flex flex-col justify-between hover:shadow-card-hover transition-all">
+        <div>
+          <div class="w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 bg-warmCream">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="The Rise of Modern Tea Culture" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[10px] font-extrabold text-teaGold uppercase tracking-wider">Culture & Rituals</span>
+          <h3 class="font-bold text-lg text-charcoal mt-1 leading-snug">
+            The Rise of Modern Tea Culture in Biratnagar
+          </h3>
+          <p class="text-xs text-charcoal-muted mt-2 leading-relaxed">
+            How moving tea from a quick roadside transaction to an intentional, hygienic, and authentic earthen ritual revolutionized eastern Nepal’s daily habits.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-[11px] text-charcoal-muted">
+          <span>4 min read</span>
+          <span class="font-bold text-charcoal">Read Article →</span>
+        </div>
+      </article>
+
+      <!-- Article 3: Tech-Savvy Approach -->
+      <article class="bg-white rounded-2xl p-5 border border-charcoal-border shadow-card flex flex-col justify-between hover:shadow-card-hover transition-all">
+        <div>
+          <div class="w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 bg-warmCream">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Siddhant Mandal Story" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[10px] font-extrabold text-teaGold uppercase tracking-wider">Founder's Journey</span>
+          <h3 class="font-bold text-lg text-charcoal mt-1 leading-snug">
+            How Siddhant Mandal Built Chiya Station: A Tech-Savvy Approach
+          </h3>
+          <p class="text-xs text-charcoal-muted mt-2 leading-relaxed">
+            Applying tech-driven product thinking, emotional branding, and high-speed connectivity to elevate traditional Nepali hospitality.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-[11px] text-charcoal-muted">
+          <span>6 min read</span>
+          <span class="font-bold text-charcoal">Read Article →</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Back to Home Banner -->
+    <div class="mt-16 text-center">
+      <a href="index.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-colors shadow-glow">
+        <span>← Return to Chiya Station Home</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brandYellow-banner text-charcoal py-8 border-t border-brandYellow-deep text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold">Chiya Station (चिया स्टेसन) • Airport Line, Biratnagar-04, Nepal</p>
+      <p class="text-[11px] text-charcoal/70 mt-1">© 2019 – 2026. Handcrafted with warm soul.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

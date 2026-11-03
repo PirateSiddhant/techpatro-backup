@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chiya Station | Good Chiya. Good Day. • Biratnagar-04</title>
+  <meta name="title" content="Chiya Station | Good Chiya. Good Day. • Biratnagar-04">
+  <meta name="description" content="Biratnagar’s premier tea venue since 2019. Find your perfect chiya match with our interactive mood assistant, authentic earthen Matka Chiya, and cozy community space.">
+  <meta name="keywords" content="Chiya Station, Chiya Station Biratnagar, Matka Chiya, Nepal Tea Cafe, Airport Line Biratnagar, Best Chiya Nepal">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chiyastation.com.np/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E5A00D'%3E%3Cpath d='M18 8h1a4 4 0 0 1 0 8h-1' stroke='%23C07A00' stroke-width='2' fill='none'/%3E%3Cpath d='M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z' fill='%23F5B800' stroke='%23C07A00' stroke-width='1.5'/%3E%3Cline x1='6' y1='2' x2='6' y2='5' stroke='%23C07A00' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='10' y1='2' x2='10' y2='5' stroke='%23C07A00' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='14' y1='2' x2='14' y2='5' stroke='%23C07A00' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: {
+              DEFAULT: '#F5B800',
+              hover: '#E5A800',
+              light: '#FEF9E6',
+              deep: '#D49B00',
+              banner: '#F2B705'
+            },
+            teaGold: '#C97A10',
+            warmCream: '#FAF6ED',
+            warmPaper: '#FFFDF9',
+            terracotta: '#B8532B',
+            charcoal: {
+              DEFAULT: '#1F1C18',
+              muted: '#686259',
+              light: '#8C857B',
+              border: '#EFE7D8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            'glow': '0 12px 35px -5px rgba(245, 184, 0, 0.28), 0 4px 12px -2px rgba(0,0,0,0.03)',
+            'card': '0 10px 30px -5px rgba(110, 80, 20, 0.05), 0 2px 8px -1px rgba(0,0,0,0.02)',
+            'card-hover': '0 20px 40px -10px rgba(180, 120, 20, 0.12), 0 6px 16px -2px rgba(0,0,0,0.04)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Warm glowing hero background matching reference layout */
+    .hero-glow-bg {
+      background: radial-gradient(circle at 75% 25%, #FDE49E 0%, #FAF0D6 35%, #FAF6ED 70%, #F5EFE0 100%);
+    }
+    .mood-active {
+      background-color: #F5B800 !important;
+      color: #1F1C18 !important;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(245, 184, 0, 0.35);
+    }
+    .day-clock-segment.active {
+      color: #B8532B;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-warmCream text-charcoal font-sans antialiased selection:bg-brandYellow-light selection:text-brandYellow-deep">
+
+  <!-- ================= TOP HEADER / NAVBAR ================= -->
+  <header class="w-full pt-4 pb-3 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between relative z-40">
+    
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-2.5 group focus:outline-none">
+      <div class="w-12 h-12 rounded-full bg-brandYellow border-2 border-white shadow-md flex items-center justify-center text-charcoal font-black text-xl tracking-tighter group-hover:scale-105 transition-transform">
+        <span class="font-serif italic font-bold">CS</span>
+      </div>
+      <div>
+        <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-charcoal block leading-none">Chiya Station</span>
+        <span class="text-[10px] font-bold tracking-widest uppercase text-teaGold block mt-0.5">Biratnagar • Est. 2019</span>
+      </div>
+    </a>
+
+    <!-- Center Navigation Links -->
+    <nav class="hidden md:flex items-center gap-7 text-xs font-semibold tracking-wide text-charcoal/80">
+      <a href="index.html" class="text-charcoal font-bold flex flex-col items-center">
+        <span>Home</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brandYellow mt-1"></span>
+      </a>
+      <div class="relative group">
+        <button class="hover:text-charcoal transition-colors flex items-center gap-1 py-1 focus:outline-none">
+          <span>Our Teas & Menu</span>
+          <svg class="w-3 h-3 text-charcoal/50 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <!-- Dropdown Menu for Categories -->
+        <div class="absolute left-0 mt-2 w-56 rounded-2xl bg-white p-2 shadow-xl border border-charcoal-border hidden group-hover:block transition-all z-50">
+          <a href="category-matka-chiya.html" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-charcoal hover:bg-brandYellow-light transition-colors">
+            <span class="text-base">🏺</span>
+            <div>
+              <div class="font-bold">Signature Matka Chiya</div>
+              <div class="text-[10px] text-charcoal-muted">Authentic smoky clay pot</div>
+            </div>
+          </a>
+          <a href="category-masala-brews.html" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-charcoal hover:bg-brandYellow-light transition-colors">
+            <span class="text-base">☕</span>
+            <div>
+              <div class="font-bold">Masala & Spiced Brews</div>
+              <div class="text-[10px] text-charcoal-muted">Cardamom, ginger & clove</div>
+            </div>
+          </a>
+          <a href="category-herbal-green.html" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-charcoal hover:bg-brandYellow-light transition-colors">
+            <span class="text-base">🍃</span>
+            <div>
+              <div class="font-bold">Herbal & Himalayan Green</div>
+              <div class="text-[10px] text-charcoal-muted">Pure organic wellness</div>
+            </div>
+          </a>
+          <a href="category-bites-momos.html" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-charcoal hover:bg-brandYellow-light transition-colors">
+            <span class="text-base">🥟</span>
+            <div>
+              <div class="font-bold">Crispy Bites & Momos</div>
+              <div class="text-[10px] text-charcoal-muted">Samosas & tender dumplings</div>
+            </div>
+          </a>
+          <a href="category-cold-frappes.html" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-charcoal hover:bg-brandYellow-light transition-colors">
+            <span class="text-base">🧊</span>
+            <div>
+              <div class="font-bold">Cold Brews & Frappes</div>
+              <div class="text-[10px] text-charcoal-muted">Iced chiya & summer blends</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="#mood-matcher" class="hover:text-charcoal transition-colors">AI Tea Experience</a>
+      <a href="founders-note.html" class="hover:text-charcoal transition-colors">Founder's Note</a>
+      <a href="blog.html" class="hover:text-charcoal transition-colors">Blog</a>
+      <a href="#location" class="hover:text-charcoal transition-colors">Airport Line Hub</a>
+    </nav>
+
+    <!-- Right Header Actions -->
+    <div class="flex items-center gap-3">
+      <a href="#mood-matcher" class="px-5 py-2.5 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-all shadow-glow hover:scale-102 flex items-center gap-1.5">
+        <span>Find Your Chiya</span>
+        <span class="text-xs">✨</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden w-10 h-10 rounded-full bg-white border border-charcoal-border flex items-center justify-center text-charcoal hover:bg-brandYellow-light focus:outline-none">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="hidden md:hidden fixed inset-x-0 top-20 z-50 bg-warmPaper/98 backdrop-blur-xl border-b border-charcoal-border p-6 shadow-2xl space-y-4">
+    <a href="index.html" class="block font-bold text-base text-charcoal py-1">Home</a>
+    <div class="pt-2 pb-1 border-t border-charcoal-border/60">
+      <div class="text-[11px] font-bold uppercase tracking-wider text-charcoal-muted mb-2">Category Pages</div>
+      <div class="grid grid-cols-1 gap-2 pl-2">
+        <a href="category-matka-chiya.html" class="text-sm font-semibold text-charcoal hover:text-teaGold flex items-center gap-2"><span>🏺</span> Signature Matka Chiya</a>
+        <a href="category-masala-brews.html" class="text-sm font-semibold text-charcoal hover:text-teaGold flex items-center gap-2"><span>☕</span> Masala & Spiced Brews</a>
+        <a href="category-herbal-green.html" class="text-sm font-semibold text-charcoal hover:text-teaGold flex items-center gap-2"><span>🍃</span> Herbal & Green Teas</a>
+        <a href="category-bites-momos.html" class="text-sm font-semibold text-charcoal hover:text-teaGold flex items-center gap-2"><span>🥟</span> Crispy Bites & Momos</a>
+        <a href="category-cold-frappes.html" class="text-sm font-semibold text-charcoal hover:text-teaGold flex items-center gap-2"><span>🧊</span> Cold Brews & Frappes</a>
+      </div>
+    </div>
+    <div class="pt-2 border-t border-charcoal-border/60 space-y-2">
+      <a href="founders-note.html" class="block font-semibold text-sm text-charcoal hover:text-teaGold">Founder's Note</a>
+      <a href="blog.html" class="block font-semibold text-sm text-charcoal hover:text-teaGold">Blog & Stories</a>
+      <a href="#location" class="block font-semibold text-sm text-charcoal hover:text-teaGold">Location & Hours</a>
+      <a href="tel:+9779825386294" class="block w-full py-3 rounded-full text-center font-bold text-charcoal bg-brandYellow shadow-glow mt-3">Call Café (+977 982-5386294)</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= HERO SECTION (MATCHING REFERENCE LAYOUT) ================= -->
+    <section class="hero-glow-bg relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Hero Left Column: Big Typographic Statement -->
+          <div class="lg:col-span-6 space-y-5 text-center lg:text-left">
+            <h1 class="font-extrabold text-5xl sm:text-6xl lg:text-7xl tracking-tight text-charcoal leading-[0.98]">
+              GOOD CHIYA.<br>
+              GOOD DAY.
+            </h1>
+
+            <p class="font-semibold text-lg sm:text-xl text-charcoal/90">
+              Your mood. Your moment. Your tea.
+            </p>
+
+            <p class="text-sm sm:text-base text-charcoal-muted max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              Let our AI Chiya Assistant find the perfect brew for you, anytime you need it in Biratnagar. Handcrafted in porous earthen kulhads since 2019.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-3">
+              <a href="#mood-matcher" class="px-7 py-3.5 rounded-full text-sm font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-all shadow-glow hover:scale-102 flex items-center gap-2">
+                <span>Find Your Chiya</span>
+                <span>✨</span>
+              </a>
+
+              <a href="founders-note.html" class="px-6 py-3.5 rounded-full text-sm font-bold text-charcoal bg-white/80 hover:bg-white border border-charcoal-border transition-all flex items-center gap-2.5 shadow-sm">
+                <span class="w-6 h-6 rounded-full bg-brandYellow/30 text-charcoal flex items-center justify-center text-xs pl-0.5">▶</span>
+                <span>Read the story</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Steaming Golden Cup & Sourced Tag -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative max-w-lg mx-auto">
+              <!-- Golden ambient radial halo -->
+              <div class="absolute inset-0 bg-brandYellow/20 rounded-full blur-3xl transform scale-90 pointer-events-none"></div>
+
+              <!-- Main Hero Image (Steaming Tea Cup on Wooden Saucer) -->
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white">
+                <img 
+                  src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1000&q=85" 
+                  alt="Steaming authentic tea cup with golden sunlight, fresh green tea mint and roasted cinnamon" 
+                  class="w-full h-[360px] sm:h-[420px] object-cover"
+                  loading="eager"
+                >
+                <!-- Subtle steam overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent"></div>
+
+                <!-- Brand Earthen Stamp in Cup -->
+                <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-2 text-xs font-bold text-charcoal">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandYellow animate-ping"></span>
+                  <span>Biratnagar’s Signature Matka</span>
+                </div>
+              </div>
+
+              <!-- Floating "Sustainably Sourced / Clay Kiln Tag" (Matching uploaded image layout) -->
+              <div class="absolute -bottom-5 right-2 sm:right-6 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-card border border-charcoal-border max-w-[220px]">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-xl bg-brandYellow-light text-brandYellow-deep flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-charcoal">Kiln-Fired Clay</div>
+                    <div class="text-[11px] text-charcoal-muted leading-tight mt-0.5">Eco-friendly earthen kulhads since 2019</div>
+                    <a href="founders-note.html" class="inline-block text-[11px] font-bold text-teaGold hover:underline mt-1">Learn more →</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: AI TEA EXPERIENCE / MOOD MATCHER (EXACT CARD LAYOUT) ================= -->
+    <section id="mood-matcher" class="max-w-7xl mx-auto px-4 sm:px-8 -mt-6 sm:-mt-10 relative z-20 mb-20">
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-card border border-charcoal-border">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left side: Mood Selection -->
+          <div class="lg:col-span-7 space-y-5">
+            <div>
+              <span class="text-[10px] font-extrabold uppercase tracking-widest text-charcoal-muted block">AI TEA EXPERIENCE</span>
+              <h2 class="font-extrabold text-2xl sm:text-3xl text-charcoal mt-1">How do you feel today?</h2>
+              <p class="text-xs sm:text-sm text-charcoal-muted mt-1">Your mood helps us find the right chiya for your moment.</p>
+            </div>
+
+            <!-- Emojis & Mood Pills (6 States) -->
+            <div class="grid grid-cols-3 sm:grid-cols-6 gap-2.5 pt-2">
+              
+              <!-- 1. Relaxed (Default Active) -->
+              <button class="mood-btn mood-active flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="relaxed">
+                <span class="text-2xl mb-1">😌</span>
+                <span class="text-xs font-semibold">Relaxed</span>
+              </button>
+
+              <!-- 2. Energetic -->
+              <button class="mood-btn bg-warmCream/60 flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="energetic">
+                <span class="text-2xl mb-1">⚡</span>
+                <span class="text-xs font-semibold">Energetic</span>
+              </button>
+
+              <!-- 3. Stressed -->
+              <button class="mood-btn bg-warmCream/60 flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="stressed">
+                <span class="text-2xl mb-1">🤯</span>
+                <span class="text-xs font-semibold">Stressed</span>
+              </button>
+
+              <!-- 4. Low/Tired -->
+              <button class="mood-btn bg-warmCream/60 flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="tired">
+                <span class="text-2xl mb-1">🌧️</span>
+                <span class="text-xs font-semibold">Tired</span>
+              </button>
+
+              <!-- 5. Focused -->
+              <button class="mood-btn bg-warmCream/60 flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="focused">
+                <span class="text-2xl mb-1">🎯</span>
+                <span class="text-xs font-semibold">Focused</span>
+              </button>
+
+              <!-- 6. Happy -->
+              <button class="mood-btn bg-warmCream/60 flex flex-col items-center justify-center p-3 rounded-2xl border border-charcoal-border/60 hover:bg-brandYellow-light transition-all" data-mood="happy">
+                <span class="text-2xl mb-1">😊</span>
+                <span class="text-xs font-semibold">Happy</span>
+              </button>
+
+            </div>
+
+            <!-- Bot Badge (Matching uploaded design) -->
+            <div class="flex items-center gap-3 pt-4 border-t border-charcoal-border/60">
+              <div class="w-9 h-9 rounded-full bg-brandYellow-light border border-brandYellow text-charcoal font-black flex items-center justify-center text-sm shadow-sm">
+                🤖
+              </div>
+              <div class="text-xs">
+                <span class="font-bold text-charcoal block">I'm your Chiya Assistant.</span>
+                <span class="text-charcoal-muted">I'll help you find your perfect tea match!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: Dynamic AI Suggestion Card -->
+          <div class="lg:col-span-5 bg-warmPaper rounded-2xl p-6 border border-charcoal-border relative shadow-sm">
+            <div class="flex items-center justify-between mb-3 text-xs">
+              <span class="font-extrabold uppercase tracking-widest text-charcoal-muted text-[10px]">AI SUGGESTS FOR YOU</span>
+              <button class="text-charcoal/40 hover:text-red-500 transition-colors" title="Favorite">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+              <div class="sm:col-span-7 space-y-2">
+                <h3 id="aiTeaTitle" class="font-bold text-xl text-charcoal leading-snug">SPECIAL MATKA CHIYA</h3>
+                <div class="text-xs font-semibold text-teaGold" id="aiTeaSubtitle">with Roasted Cardamom</div>
+
+                <!-- Feature tags -->
+                <div id="aiTeaPills" class="flex flex-wrap gap-1.5 text-[10px] text-charcoal-muted py-1">
+                  <span class="flex items-center gap-1">✦ Smoky Earthen</span>
+                  <span class="flex items-center gap-1">✦ Calming</span>
+                  <span class="flex items-center gap-1">✦ Digest</span>
+                </div>
+
+                <p id="aiTeaDesc" class="text-xs text-charcoal-muted leading-relaxed">
+                  Slow-brewed rich milk tea served in an unbaked kiln clay pot. Imparts sweet earthen aromatics that melt daily fatigue.
+                </p>
+
+                <div class="pt-2 flex items-center gap-3">
+                  <a id="aiTeaLink" href="category-matka-chiya.html" class="px-5 py-2 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-colors shadow-sm">
+                    View Details • रू 45
+                  </a>
+                </div>
+              </div>
+
+              <!-- Recommendation Photo -->
+              <div class="sm:col-span-5">
+                <div class="w-full aspect-square rounded-2xl overflow-hidden border border-charcoal-border bg-brandYellow-light">
+                  <img id="aiTeaImage" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Chiya Recommendation" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: EXPLORE OUR CATEGORIES (INDIVIDUAL PAGE PER CATEGORY) ================= -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-14">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <span class="text-[10px] font-extrabold uppercase tracking-widest text-charcoal-muted block">EXPLORE OUR BREWS & BITES</span>
+          <h2 class="font-extrabold text-3xl text-charcoal mt-1">Find your favorite blend</h2>
+        </div>
+        <!-- Carousel Nav Buttons (as in layout) -->
+        <div class="flex items-center gap-2">
+          <button onclick="scrollCategories(-1)" aria-label="Scroll left" class="w-9 h-9 rounded-full bg-white border border-charcoal-border flex items-center justify-center text-charcoal hover:bg-brandYellow transition-colors shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button onclick="scrollCategories(1)" aria-label="Scroll right" class="w-9 h-9 rounded-full bg-white border border-charcoal-border flex items-center justify-center text-charcoal hover:bg-brandYellow transition-colors shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Categories Cards Grid (Scrollable Container) -->
+      <div id="categoriesContainer" class="flex sm:grid sm:grid-cols-5 gap-4 overflow-x-auto pb-4 scrollbar-none snap-x">
+        
+        <!-- Category 1: Matka Chiya -->
+        <a href="category-matka-chiya.html" class="min-w-[220px] sm:min-w-0 bg-white rounded-2xl p-4 border border-charcoal-border shadow-card hover:shadow-card-hover transition-all group shrink-0 snap-start flex flex-col justify-between">
+          <div>
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-warmCream">
+              <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=500&q=80" alt="Matka Chiya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="font-extrabold text-sm text-charcoal group-hover:text-teaGold transition-colors uppercase tracking-wide">MATKA CHIYA</h3>
+            <p class="text-[11px] text-charcoal-muted mt-0.5">Rich. Bold. Earthen.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-charcoal-border/50 text-[11px] font-bold text-charcoal flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore Page</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <!-- Category 2: Masala Brews -->
+        <a href="category-masala-brews.html" class="min-w-[220px] sm:min-w-0 bg-white rounded-2xl p-4 border border-charcoal-border shadow-card hover:shadow-card-hover transition-all group shrink-0 snap-start flex flex-col justify-between">
+          <div>
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-warmCream">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=80" alt="Masala Chiya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="font-extrabold text-sm text-charcoal group-hover:text-teaGold transition-colors uppercase tracking-wide">MASALA BREWS</h3>
+            <p class="text-[11px] text-charcoal-muted mt-0.5">Spiced. Warm. Balanced.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-charcoal-border/50 text-[11px] font-bold text-charcoal flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore Page</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <!-- Category 3: Herbal & Green -->
+        <a href="category-herbal-green.html" class="min-w-[220px] sm:min-w-0 bg-white rounded-2xl p-4 border border-charcoal-border shadow-card hover:shadow-card-hover transition-all group shrink-0 snap-start flex flex-col justify-between">
+          <div>
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-warmCream">
+              <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=500&q=80" alt="Herbal Tea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="font-extrabold text-sm text-charcoal group-hover:text-teaGold transition-colors uppercase tracking-wide">HERBAL & GREEN</h3>
+            <p class="text-[11px] text-charcoal-muted mt-0.5">Calm. Pure. Herbal.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-charcoal-border/50 text-[11px] font-bold text-charcoal flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore Page</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <!-- Category 4: Crispy Bites & Momo -->
+        <a href="category-bites-momos.html" class="min-w-[220px] sm:min-w-0 bg-white rounded-2xl p-4 border border-charcoal-border shadow-card hover:shadow-card-hover transition-all group shrink-0 snap-start flex flex-col justify-between">
+          <div>
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-warmCream">
+              <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=500&q=80" alt="Momos and Snacks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="font-extrabold text-sm text-charcoal group-hover:text-teaGold transition-colors uppercase tracking-wide">BITES & MOMOS</h3>
+            <p class="text-[11px] text-charcoal-muted mt-0.5">Savory. Flaky. Fresh.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-charcoal-border/50 text-[11px] font-bold text-charcoal flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore Page</span>
+            <span>→</span>
+          </div>
+        </a>
+
+        <!-- Category 5: Cold Brews & Frappes -->
+        <a href="category-cold-frappes.html" class="min-w-[220px] sm:min-w-0 bg-white rounded-2xl p-4 border border-charcoal-border shadow-card hover:shadow-card-hover transition-all group shrink-0 snap-start flex flex-col justify-between">
+          <div>
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-warmCream">
+              <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=500&q=80" alt="Iced Tea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="font-extrabold text-sm text-charcoal group-hover:text-teaGold transition-colors uppercase tracking-wide">COLD FRAPPES</h3>
+            <p class="text-[11px] text-charcoal-muted mt-0.5">Cool. Chilled. Frothy.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-charcoal-border/50 text-[11px] font-bold text-charcoal flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            <span>Explore Page</span>
+            <span>→</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: DAY CLOCK & AI DAILY TEA PLANNER (MATCHING REFERENCE) ================= -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Day Part Dial / Circular Moments Graphic -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-charcoal-muted block">FOR EVERY MOMENT</span>
+            <h2 class="font-extrabold text-3xl sm:text-4xl text-charcoal mt-1">Chiya for every<br>part of your day</h2>
+            <p class="text-sm text-charcoal-muted mt-2 max-w-md leading-relaxed">
+              From your morning boost to your evening unwind on Airport Line, we're with you throughout every hour in Biratnagar.
+            </p>
+          </div>
+
+          <!-- Circular Day Dial Graphic -->
+          <div class="relative w-64 h-64 sm:w-72 sm:h-72 mx-auto lg:mx-0 flex items-center justify-center">
+            <!-- Concentric dial ring -->
+            <div class="absolute inset-0 rounded-full border-2 border-dashed border-brandYellow/60 animate-[spin_60s_linear_infinite]"></div>
+            
+            <!-- Top: Morning -->
+            <div class="absolute top-0 flex flex-col items-center -translate-y-2">
+              <span class="text-xs font-bold text-charcoal flex items-center gap-1">☀️ Morning</span>
+              <span class="text-[10px] text-charcoal-muted">Energize</span>
+            </div>
+
+            <!-- Right: Afternoon -->
+            <div class="absolute right-0 flex flex-col items-center translate-x-3 text-right">
+              <span class="text-xs font-bold text-charcoal flex items-center gap-1">🌤️ Afternoon</span>
+              <span class="text-[10px] text-charcoal-muted">Refresh</span>
+            </div>
+
+            <!-- Bottom: Evening -->
+            <div class="absolute bottom-0 flex flex-col items-center translate-y-3">
+              <span class="text-xs font-bold text-charcoal flex items-center gap-1">🌙 Evening</span>
+              <span class="text-[10px] text-charcoal-muted">Unwind</span>
+            </div>
+
+            <!-- Left: Night -->
+            <div class="absolute left-0 flex flex-col items-center -translate-x-3 text-left">
+              <span class="text-xs font-bold text-charcoal flex items-center gap-1">🌌 Night</span>
+              <span class="text-[10px] text-charcoal-muted">Relax</span>
+            </div>
+
+            <!-- Center Cup (Top View) -->
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10 bg-brandYellow">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="Chiya Station Cup Top View" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <div class="pt-2 text-center lg:text-left">
+            <a href="category-matka-chiya.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold text-charcoal bg-white border border-charcoal-border hover:bg-brandYellow-light transition-all shadow-sm">
+              <span>Explore Moments</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: AI Daily Tea Planner Interactive Chat Simulator -->
+        <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-charcoal-border shadow-card">
+          <div class="flex items-center justify-between mb-5 pb-3 border-b border-charcoal-border/60">
+            <div>
+              <span class="text-[10px] font-extrabold uppercase tracking-widest text-charcoal-muted block">AI DAILY TEA PLANNER</span>
+              <div class="font-bold text-sm text-charcoal flex items-center gap-1.5 mt-0.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Chiya Sommelier Online</span>
+              </div>
+            </div>
+            <div class="text-xs text-charcoal-muted">Biratnagar-04</div>
+          </div>
+
+          <!-- Chat Messages Container -->
+          <div id="plannerChatContainer" class="space-y-3.5 mb-5 min-h-[190px] max-h-[260px] overflow-y-auto pr-1">
+            
+            <!-- User message -->
+            <div class="flex items-start gap-2.5 justify-end">
+              <div class="bg-warmCream rounded-2xl rounded-tr-none px-4 py-2.5 max-w-xs text-xs text-charcoal">
+                I had a long meeting, a lot of work and I'm feeling tired now.
+              </div>
+              <div class="w-7 h-7 rounded-full bg-sand border border-charcoal-border flex items-center justify-center text-[10px] font-bold shrink-0">
+                👤
+              </div>
+            </div>
+
+            <!-- Bot response -->
+            <div class="flex items-start gap-2.5">
+              <div class="w-7 h-7 rounded-full bg-brandYellow flex items-center justify-center text-xs font-bold shrink-0">
+                🤖
+              </div>
+              <div class="bg-brandYellow-light border border-brandYellow/40 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-xs text-xs text-charcoal leading-relaxed">
+                That sounds intense! I recommend our <strong class="text-brandYellow-deep">Special Matka Chiya</strong> with crushed mountain cardamom. It releases tension and soothes the mind instantly.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Input Form -->
+          <form id="plannerForm" class="relative flex items-center gap-2">
+            <input 
+              type="text" 
+              id="plannerInput" 
+              placeholder="Tell me about your day or craving..." 
+              class="w-full pl-4 pr-12 py-3 rounded-full text-xs bg-warmCream border border-charcoal-border focus:outline-none focus:ring-2 focus:ring-brandYellow text-charcoal placeholder:text-charcoal-muted"
+            >
+            <button type="submit" aria-label="Send message" class="absolute right-1.5 w-8 h-8 rounded-full bg-brandYellow hover:bg-brandYellow-hover text-charcoal flex items-center justify-center transition-all shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: TRUST / QUALITY BADGES STRIP ================= -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-10 border-t border-charcoal-border/70">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white border border-charcoal-border flex items-center justify-center text-teaGold text-lg shrink-0 shadow-sm">
+            🌿
+          </div>
+          <div>
+            <div class="text-xs font-bold text-charcoal">Sustainably Sourced</div>
+            <div class="text-[11px] text-charcoal-muted">High-elevation organic tea</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white border border-charcoal-border flex items-center justify-center text-teaGold text-lg shrink-0 shadow-sm">
+            🏺
+          </div>
+          <div>
+            <div class="text-xs font-bold text-charcoal">Quality You Can Trust</div>
+            <div class="text-[11px] text-charcoal-muted">Handcrafted since 2019</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white border border-charcoal-border flex items-center justify-center text-teaGold text-lg shrink-0 shadow-sm">
+            🤝
+          </div>
+          <div>
+            <div class="text-xs font-bold text-charcoal">Community Living Room</div>
+            <div class="text-[11px] text-charcoal-muted">Board games & PS5 Lounge</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white border border-charcoal-border flex items-center justify-center text-teaGold text-lg shrink-0 shadow-sm">
+            ⭐
+          </div>
+          <div>
+            <div class="text-xs font-bold text-charcoal">4.9★ Google Rating</div>
+            <div class="text-[11px] text-charcoal-muted">380+ Verified local reviews</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: LOCATION & CONTACT ================= -->
+    <section id="location" class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-charcoal-border shadow-card grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-[10px] font-extrabold uppercase tracking-widest text-teaGold block">VISIT CHIYA STATION</span>
+          <h2 class="font-extrabold text-2xl text-charcoal">Airport Line, Biratnagar-04</h2>
+          <p class="text-xs text-charcoal-muted leading-relaxed">
+            Open daily from 6:00 AM to 10:00 PM. Hot food service runs from 9:00 AM to 9:00 PM. Located directly on Airport Line, Morang, Koshi Province.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="tel:+9779825386294" class="px-5 py-2.5 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-colors shadow-sm">
+              Call +977 982-5386294
+            </a>
+            <a href="https://maps.google.com/?q=Chiya+Station+Biratnagar" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full text-xs font-bold text-charcoal bg-warmCream hover:bg-sand border border-charcoal-border transition-colors">
+              Directions on Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 h-56 rounded-2xl overflow-hidden border border-charcoal-border">
+          <iframe 
+            title="Chiya Station Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.9542036496356!2d87.27763667597148!3d26.483737976899723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef753a2bc180a1%3A0x37f2602f204cb1aa!2sChiya%20Station!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" 
+            class="w-full h-full border-0" 
+            loading="lazy" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (EXACT WARM YELLOW VIBE AS REFERENCE) ================= -->
+  <footer class="bg-brandYellow-banner text-charcoal pt-14 pb-8 mt-12 border-t-2 border-brandYellow-deep">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Upper Footer Row -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-charcoal/15">
+        
+        <!-- Left: Brand Emblem & Tagline -->
+        <div class="md:col-span-4 space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-full bg-white text-charcoal font-black flex items-center justify-center text-lg shadow-sm">
+              CS
+            </div>
+            <div>
+              <div class="font-black text-xl tracking-tight leading-none">CHIYA STATION</div>
+              <div class="font-extrabold text-[10px] tracking-widest uppercase text-charcoal/70 mt-0.5">GOOD CHIYA. WARM SOUL.</div>
+            </div>
+          </div>
+          <p class="text-xs text-charcoal/80 max-w-sm leading-relaxed">
+            Redefining tea culture in Biratnagar since 2019. Where authentic flavors meet genuine conversations in an earthen ambiance.
+          </p>
+        </div>
+
+        <!-- Center 1: Dedicated Categories Links -->
+        <div class="md:col-span-3 space-y-2">
+          <div class="text-xs font-black uppercase tracking-wider text-charcoal/90">Our Teas & Menu</div>
+          <ul class="text-xs font-medium space-y-1.5 text-charcoal/80">
+            <li><a href="category-matka-chiya.html" class="hover:underline">Signature Matka Chiya</a></li>
+            <li><a href="category-masala-brews.html" class="hover:underline">Masala & Spiced Teas</a></li>
+            <li><a href="category-herbal-green.html" class="hover:underline">Herbal & Green Brews</a></li>
+            <li><a href="category-bites-momos.html" class="hover:underline">Crispy Snacks & Momos</a></li>
+            <li><a href="category-cold-frappes.html" class="hover:underline">Cold Brews & Iced Tea</a></li>
+          </ul>
+        </div>
+
+        <!-- Center 2: Company & Story Pages -->
+        <div class="md:col-span-2 space-y-2">
+          <div class="text-xs font-black uppercase tracking-wider text-charcoal/90">Experience</div>
+          <ul class="text-xs font-medium space-y-1.5 text-charcoal/80">
+            <li><a href="founders-note.html" class="hover:underline font-bold">Founder’s Note</a></li>
+            <li><a href="blog.html" class="hover:underline font-bold">Blog & Stories</a></li>
+            <li><a href="#mood-matcher" class="hover:underline">AI Tea Matcher</a></li>
+            <li><a href="#location" class="hover:underline">Location & Hours</a></li>
+            <li><a href="https://search.google.com/local/writereview?placeid=ChIJoYDBKzp17zkRqrFMIC9g8jc" target="_blank" rel="noopener noreferrer" class="hover:underline">Review on Google</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Newsletter Signup (Matching reference layout) -->
+        <div class="md:col-span-3 space-y-3">
+          <div class="text-xs font-black uppercase tracking-wider text-charcoal/90">Stay in the loop</div>
+          <p class="text-xs text-charcoal/80">Be the first to hear about seasonal brews, live jamming sessions, and cafe events.</p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to Chiya Station updates!');" class="relative flex items-center">
+            <input type="email" placeholder="Enter your email" required class="w-full px-4 py-2.5 rounded-full text-xs bg-white text-charcoal placeholder:text-charcoal-muted focus:outline-none focus:ring-2 focus:ring-charcoal">
+            <button type="submit" aria-label="Subscribe" class="absolute right-1 w-7 h-7 rounded-full bg-charcoal text-white flex items-center justify-center text-xs hover:bg-black transition-colors">
+              →
+            </button>
+          </form>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 pt-1">
+            <a href="https://www.instagram.com/chiyastation/" target="_blank" rel="noopener noreferrer" class="w-7 h-7 rounded-full bg-white/40 hover:bg-white flex items-center justify-center text-charcoal transition-colors text-xs font-bold">IG</a>
+            <a href="https://www.facebook.com/ChiyaStation/" target="_blank" rel="noopener noreferrer" class="w-7 h-7 rounded-full bg-white/40 hover:bg-white flex items-center justify-center text-charcoal transition-colors text-xs font-bold">FB</a>
+            <a href="https://www.tiktok.com/@chiyastation" target="_blank" rel="noopener noreferrer" class="w-7 h-7 rounded-full bg-white/40 hover:bg-white flex items-center justify-center text-charcoal transition-colors text-xs font-bold">TK</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer Copyright & Meta -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-charcoal/70 gap-3">
+        <div>
+          © 2019 – 2026 Chiya Station (चिया स्टेसन). Airport Line, Biratnagar-04, Nepal. All Rights Reserved.
+        </div>
+        <div class="flex items-center gap-4 font-semibold">
+          <a href="founders-note.html" class="hover:underline">Founder's Note</a>
+          <span>•</span>
+          <a href="blog.html" class="hover:underline">Blog</a>
+          <span>•</span>
+          <a href="https://chiyastation.com.np" class="hover:underline">Original Site</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // 1. Mobile Menu Drawer Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileMenuBtn && mobileDrawer) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+    }
+
+    // 2. Interactive AI Mood Matcher Data & Functionality
+    const moodData = {
+      relaxed: {
+        title: "SPECIAL MATKA CHIYA",
+        subtitle: "with Roasted Green Cardamom",
+        pills: ["✦ Smoky Earthen", "✦ Calming", "✦ Digestive"],
+        desc: "Slow-brewed rich milk tea served in an unbaked kiln clay pot. Imparts sweet earthen aromatics that melt daily fatigue.",
+        price: "रू 45",
+        link: "category-matka-chiya.html",
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80"
+      },
+      energetic: {
+        title: "MASALA KULHAD SPECIAL",
+        subtitle: "with Crushed Mountain Ginger & Clove",
+        pills: ["✦ Bold Spiced", "✦ Invigorating", "✦ Warm Energy"],
+        desc: "Intensely spiced with whole Ceylon cinnamon, black pepper, and fresh ginger boiled in creamy organic dairy.",
+        price: "रू 55",
+        link: "category-masala-brews.html",
+        image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80"
+      },
+      stressed: {
+        title: "HIMALAYAN LEMON HONEY GREEN",
+        subtitle: "with Pure Mountain Wildflower Honey",
+        pills: ["✦ Stress Relief", "✦ Antioxidant", "✦ Zero Dairy"],
+        desc: "Organic loose green leaves steeped with hand-crushed ginger, lemon extract, and pure honey for peaceful clarity.",
+        price: "रू 60",
+        link: "category-herbal-green.html",
+        image: "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80"
+      },
+      tired: {
+        title: "ADRAK KADAK CHIYA",
+        subtitle: "Double Shot Fresh Ginger Infusion",
+        pills: ["✦ Restorative", "✦ Warming", "✦ Immune Booster"],
+        desc: "Strong CTC tea steeped with double crushed pungent ginger to kickstart your senses after long hours.",
+        price: "रू 40",
+        link: "category-masala-brews.html",
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80"
+      },
+      focused: {
+        title: "ILAM SPECIAL ORTHODOX BLACK",
+        subtitle: "First Flush Pure Whole Leaf",
+        pills: ["✦ Clean Focus", "✦ Floral Notes", "✦ Low Calorie"],
+        desc: "Delicate golden liquor from eastern Nepal's misty hills. Crisp, fragrant, and perfect for productive laptop sessions.",
+        price: "रू 50",
+        link: "category-herbal-green.html",
+        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+      },
+      happy: {
+        title: "COLD MATKA MASALA FRAPPE",
+        subtitle: "Blended Chilled Tea with Cinnamon Cream",
+        pills: ["✦ Refreshing", "✦ Sweet Treat", "✦ Frothy Cold"],
+        desc: "A celebration of modern tea: chilled spiced chai concentrate whipped with fresh milk cream and served icy cold.",
+        price: "रू 120",
+        link: "category-cold-frappes.html",
+        image: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80"
+      }
+    };
+
+    const moodBtns = document.querySelectorAll('.mood-btn');
+    const aiTitle = document.getElementById('aiTeaTitle');
+    const aiSub = document.getElementById('aiTeaSubtitle');
+    const aiPills = document.getElementById('aiTeaPills');
+    const aiDesc = document.getElementById('aiTeaDesc');
+    const aiLink = document.getElementById('aiTeaLink');
+    const aiImg = document.getElementById('aiTeaImage');
+
+    moodBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        moodBtns.forEach(b => {
+          b.classList.remove('mood-active');
+          b.classList.add('bg-warmCream/60');
+        });
+        btn.classList.add('mood-active');
+        btn.classList.remove('bg-warmCream/60');
+
+        const mood = btn.getAttribute('data-mood');
+        const item = moodData[mood];
+        if (item) {
+          aiTitle.textContent = item.title;
+          aiSub.textContent = item.subtitle;
+          aiDesc.textContent = item.desc;
+          aiLink.textContent = `View Details • ${item.price}`;
+          aiLink.href = item.link;
+          aiImg.src = item.image;
+
+          aiPills.innerHTML = item.pills.map(p => `<span>${p}</span>`).join(' ');
+        }
+      });
+    });
+
+    // 3. Horizontal Scroll for Categories
+    function scrollCategories(direction) {
+      const container = document.getElementById('categoriesContainer');
+      if (container) {
+        container.scrollBy({ left: direction * 260, behavior: 'smooth' });
+      }
+    }
+
+    // 4. Interactive Planner Form Chat Simulation
+    const plannerForm = document.getElementById('plannerForm');
+    const plannerInput = document.getElementById('plannerInput');
+    const chatContainer = document.getElementById('plannerChatContainer');
+
+    if (plannerForm) {
+      plannerForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const text = plannerInput.value.trim();
+        if (!text) return;
+
+        // Append user bubble
+        const userDiv = document.createElement('div');
+        userDiv.className = 'flex items-start gap-2.5 justify-end';
+        userDiv.innerHTML = `
+          <div class="bg-warmCream rounded-2xl rounded-tr-none px-4 py-2.5 max-w-xs text-xs text-charcoal">
+            ${text}
+          </div>
+          <div class="w-7 h-7 rounded-full bg-sand border border-charcoal-border flex items-center justify-center text-[10px] font-bold shrink-0">
+            👤
+          </div>
+        `;
+        chatContainer.appendChild(userDiv);
+        plannerInput.value = '';
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+
+        // Auto Bot response
+        setTimeout(() => {
+          const botDiv = document.createElement('div');
+          botDiv.className = 'flex items-start gap-2.5';
+          botDiv.innerHTML = `
+            <div class="w-7 h-7 rounded-full bg-brandYellow flex items-center justify-center text-xs font-bold shrink-0">
+              🤖
+            </div>
+            <div class="bg-brandYellow-light border border-brandYellow/40 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-xs text-xs text-charcoal leading-relaxed">
+              Based on "${text}", I recommend stepping by Chiya Station for a hot <a href="category-matka-chiya.html" class="font-bold underline text-brandYellow-deep">Special Matka Chiya</a> and our freshly steamed momos!
+            </div>
+          `;
+          chatContainer.appendChild(botDiv);
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        }, 600);
+      });
+    }
+  </script>
+
+</body>
+</html>

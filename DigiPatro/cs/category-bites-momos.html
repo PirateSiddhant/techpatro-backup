@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crispy Bites & Momos | Chiya Station Biratnagar</title>
+  <meta name="description" content="Savor handmade juicy momos, flaky samosas, crispy snacks, and gourmet bites at Chiya Station on Airport Line, Biratnagar.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E5A00D'%3E%3Cpath d='M18 8h1a4 4 0 0 1 0 8h-1' stroke='%23C07A00' stroke-width='2' fill='none'/%3E%3Cpath d='M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z' fill='%23F5B800' stroke='%23C07A00' stroke-width='1.5'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: {
+              DEFAULT: '#F5B800',
+              hover: '#E5A800',
+              light: '#FEF9E6',
+              deep: '#D49B00',
+              banner: '#F2B705'
+            },
+            teaGold: '#C97A10',
+            warmCream: '#FAF6ED',
+            warmPaper: '#FFFDF9',
+            terracotta: '#B8532B',
+            charcoal: {
+              DEFAULT: '#1F1C18',
+              muted: '#686259',
+              light: '#8C857B',
+              border: '#EFE7D8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-warmCream text-charcoal font-sans antialiased selection:bg-brandYellow-light selection:text-brandYellow-deep">
+
+  <!-- Header -->
+  <header class="w-full pt-4 pb-3 px-4 sm:px-8 max-w-7xl mx-auto flex items-center justify-between border-b border-charcoal-border/60">
+    <a href="index.html" class="flex items-center gap-2.5 group">
+      <div class="w-12 h-12 rounded-full bg-brandYellow border-2 border-white shadow-md flex items-center justify-center text-charcoal font-black text-xl">
+        <span class="font-serif italic font-bold">CS</span>
+      </div>
+      <div>
+        <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-charcoal block leading-none">Chiya Station</span>
+        <span class="text-[10px] font-bold tracking-widest uppercase text-teaGold block mt-0.5">Biratnagar • Est. 2019</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 text-xs font-semibold tracking-wide text-charcoal/80">
+      <a href="index.html" class="hover:text-charcoal transition-colors">Home</a>
+      <a href="category-matka-chiya.html" class="hover:text-charcoal transition-colors">Signature Matka</a>
+      <a href="category-masala-brews.html" class="hover:text-charcoal transition-colors">Masala Brews</a>
+      <a href="category-herbal-green.html" class="hover:text-charcoal transition-colors">Herbal & Green</a>
+      <a href="category-bites-momos.html" class="text-charcoal font-bold flex flex-col items-center">
+        <span>Bites & Momos</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-brandYellow mt-1"></span>
+      </a>
+      <a href="category-cold-frappes.html" class="hover:text-charcoal transition-colors">Cold Frappes</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="index.html#mood-matcher" class="px-5 py-2.5 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-all shadow-sm">
+        <span>Find Your Chiya ✨</span>
+      </a>
+      <a href="index.html" class="md:hidden text-xs font-bold text-charcoal bg-white px-3 py-1.5 rounded-full border border-charcoal-border">← Home</a>
+    </div>
+  </header>
+
+  <!-- Category Quick Switcher Bar -->
+  <div class="bg-white/80 border-b border-charcoal-border/60 py-3 overflow-x-auto scrollbar-none">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex items-center gap-3 text-xs font-bold whitespace-nowrap">
+      <span class="text-charcoal-muted uppercase text-[10px] tracking-wider pr-2">Categories:</span>
+      <a href="category-matka-chiya.html" class="px-4 py-1.5 rounded-full bg-warmCream text-charcoal-muted hover:text-charcoal">🏺 Signature Matka</a>
+      <a href="category-masala-brews.html" class="px-4 py-1.5 rounded-full bg-warmCream text-charcoal-muted hover:text-charcoal">☕ Masala Brews</a>
+      <a href="category-herbal-green.html" class="px-4 py-1.5 rounded-full bg-warmCream text-charcoal-muted hover:text-charcoal">🍃 Herbal & Green</a>
+      <a href="category-bites-momos.html" class="px-4 py-1.5 rounded-full bg-brandYellow text-charcoal shadow-sm">🥟 Bites & Momos</a>
+      <a href="category-cold-frappes.html" class="px-4 py-1.5 rounded-full bg-warmCream text-charcoal-muted hover:text-charcoal">🧊 Cold Frappes</a>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+    
+    <!-- Category Hero Banner -->
+    <div class="bg-white rounded-3xl p-8 sm:p-12 border border-charcoal-border shadow-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
+      <div class="lg:col-span-7 space-y-4">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-teaGold block">Category 04 • Kitchen Special</span>
+        <h1 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal leading-tight">
+          Crispy Bites & Momos
+        </h1>
+        <p class="text-sm sm:text-base text-charcoal-muted leading-relaxed">
+          Nothing complements hot Matka Chiya quite like freshly prepared street-gourmet delicacies. Freshly rolled handmade momos, golden flaky samosas, and savory snacks prepared to order.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-bold pt-2">
+          <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-800">🥟 Handmade In-House Daily</span>
+          <span class="px-3 py-1 rounded-full bg-brandYellow-light text-brandYellow-deep">🌶️ Spicy Timur Chutney</span>
+          <span class="px-3 py-1 rounded-full bg-warmCream text-charcoal-muted">⏰ Kitchen: 9:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+      <div class="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3] bg-warmCream border border-charcoal-border">
+        <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=800&q=80" alt="Momos" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Items Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Item 1 -->
+      <div class="bg-white rounded-2xl p-6 border border-charcoal-border shadow-card flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 mb-2">
+            <h3 class="font-bold text-xl text-charcoal">Steam Momo (Veg / Chicken)</h3>
+            <span class="text-lg font-extrabold text-teaGold">रू 140 / 180</span>
+          </div>
+          <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow-light text-brandYellow-deep uppercase mb-2">Crowd Favorite</span>
+          <p class="text-xs text-charcoal-muted leading-relaxed">
+            10 delicate, handmade dumplings stuffed with seasoned fillings. Served with roasted sesame tomato sauce and fiery mountain timur paste.
+          </p>
+        </div>
+        <div class="mt-6 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-xs text-charcoal-muted">
+          <span>10 Pieces • Hot Steamed</span>
+          <span class="text-teaGold font-bold">Chef's Pick</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-2xl p-6 border border-charcoal-border shadow-card flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 mb-2">
+            <h3 class="font-bold text-xl text-charcoal">Kothey Pan-Fried Momo</h3>
+            <span class="text-lg font-extrabold text-teaGold">रू 160 / 200</span>
+          </div>
+          <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase mb-2">Crispy Bottom</span>
+          <p class="text-xs text-charcoal-muted leading-relaxed">
+            Pan-seared till golden and crunchy on the base while soft and juicy on top. A texture lover’s dream snack with evening tea.
+          </p>
+        </div>
+        <div class="mt-6 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-xs text-charcoal-muted">
+          <span>10 Pieces • Crispy Pan-Seared</span>
+          <span class="text-teaGold font-bold">Popular</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white rounded-2xl p-6 border border-charcoal-border shadow-card flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 mb-2">
+            <h3 class="font-bold text-xl text-charcoal">Crisp Samosa & Chutney</h3>
+            <span class="text-lg font-extrabold text-teaGold">रू 80</span>
+          </div>
+          <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-brandYellow-light text-brandYellow-deep uppercase mb-2">Classic Street</span>
+          <p class="text-xs text-charcoal-muted leading-relaxed">
+            Two golden pastry cones stuffed with seasoned cumin potatoes, sweet green peas, and cashews, accompanied by tangy tamarind dip.
+          </p>
+        </div>
+        <div class="mt-6 pt-3 border-t border-charcoal-border/60 flex items-center justify-between text-xs text-charcoal-muted">
+          <span>2 Pieces • Freshly Fried</span>
+          <span class="text-emerald-600 font-bold">Vegetarian</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="mt-14 pt-8 border-t border-charcoal-border/60 flex items-center justify-between">
+      <a href="category-herbal-green.html" class="text-xs font-bold text-charcoal hover:underline">← Previous: Herbal & Green</a>
+      <a href="category-cold-frappes.html" class="px-6 py-3 rounded-full text-xs font-bold text-charcoal bg-brandYellow hover:bg-brandYellow-hover transition-colors shadow-sm">
+        Next: Cold Frappes →
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brandYellow-banner text-charcoal py-8 border-t border-brandYellow-deep text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold">Chiya Station (चिया स्टेसन) • Airport Line, Biratnagar-04, Nepal</p>
+      <p class="text-[11px] text-charcoal/70 mt-1">© 2019 – 2026. Handcrafted with warm soul.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

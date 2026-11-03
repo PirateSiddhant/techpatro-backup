@@ -1,0 +1,27 @@
+# WordPress configuration and local-only credentials.
+/wp-config.php
+/local-xdebuginfo.php
+/.env
+/.env.*
+!/.env.example
+
+# User uploads and generated backups.
+/wp-content/uploads/
+/wp-content/ai1wm-backups/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/td_cache/
+/wp-content/jetpack-waf/
+
+# Runtime logs and caches.
+*.log
+/wp-content/cache/
+/wp-content/wflogs/
+/wp-content/wphb-cache/
+/wp-content/wphb-logs/
+
+# Local editor workspace file.
+/public.code-workspace
+
+# Local operating-system metadata.
+.DS_Store

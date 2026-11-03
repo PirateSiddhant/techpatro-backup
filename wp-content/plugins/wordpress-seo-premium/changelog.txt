@@ -1,0 +1,7 @@
+*** Yoast SEO premium Changelog ***
+
+
+2024-12-18 - version 24.1
+* fix -  Fixes a bug where the Yoast AI usage counter would only be displayed after a delay.
+* update -  Bumps the minimum required version of Yoast SEO to 24.1.
+
